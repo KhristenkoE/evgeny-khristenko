@@ -40,7 +40,7 @@ const Home = () => {
                 <div className={s.separator}></div>
                 <div className={s.mail}>
                   <form className={s.mailForm}>
-                    <textarea autoCorrect="on" autoComplete="on" className={s.mailMessage} placeholder="Message" />
+                    <textarea spellCheck="true" autoCorrect="on" autoComplete="on" className={s.mailMessage} placeholder="Message" />
                     <button className={s.mailButton} type="submit">Send</button>
                   </form>
                 </div>
