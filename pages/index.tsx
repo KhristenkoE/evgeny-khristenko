@@ -35,32 +35,32 @@ const Home = () => {
                 <div className={s.internet}>
                   <h4 className={s.internetTitle}>Me on the internet</h4>
                   <div className={s.socials}>
-                    <a href="https://twitter.com/khristenko_e" className={s.social}>
-											<Image src={twitter}/>
+                    <a href="https://twitter.com/khristenko_e" target="_blank" className={s.social}>
+											<Image loader={() => twitter.src} src={twitter}/>
 											Twitter
 										</a>
-                    <a href="https://www.facebook.com/KhristenkoEvgenyy" className={s.social}>
-											<Image src={facebook}/>
+                    <a href="https://www.facebook.com/KhristenkoEvgenyy" target="_blank" className={s.social}>
+											<Image loader={() => facebook.src} src={facebook}/>
 											Facebook
 											</a>
-                    <a href="#" className={s.social}>
-										<Image src={instagram}/>
+                    <a href="https://instagram.com/evgeny_khristenko" target="_blank" className={s.social}>
+										<Image loader={() => instagram.src} src={instagram}/>
 											Instagram
 											</a>
-                    <a href="#" className={s.social}>
-										<Image src={linkedin}/>
+                    <a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" className={s.social}>
+										<Image loader={() => linkedin.src} src={linkedin}/>
 											LinkedIn
 											</a>
-                    <a href="#" className={s.social}>
-										<Image src={github}/>
+                    <a href="https://github.com/KhristenkoE" target="_blank" className={s.social}>
+										<Image loader={() => github.src} src={github}/>
 											Github
 											</a>
-                    <a href="#" className={s.social}>
-										<Image src={crunchbase}/>
+                    <a href="https://crunchbase.com/person/evgeny-khristenko" target="_blank" className={s.social}>
+										<Image loader={() => crunchbase.src} src={crunchbase}/>
 											Crunchbase
 											</a>
-                    <a href="#" className={s.social}>
-										<Image src={vk}/>
+                    <a href="https://vk.com/khristenkoe" target="_blank" className={s.social}>
+										<Image loader={() => vk.src} src={vk}/>
 											VK
 											</a>
                   </div>
