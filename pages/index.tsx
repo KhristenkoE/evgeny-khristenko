@@ -5,7 +5,14 @@ import s from '@styles/Home.module.sass';
 import Header from '@components/Header';
 import Section from '@components/Section';
 
-import Me from '@static/img/me.jpg';
+import me from '@static/img/me.jpg';
+import twitter from '@static/img/twitter.svg';
+import facebook from '@static/img/facebook.svg';
+import instagram from '@static/img/instagram.svg';
+import linkedin from '@static/img/linkedin.svg';
+import github from '@static/img/github.svg';
+import crunchbase from '@static/img/twitter.svg';
+import vk from '@static/img/twitter.svg';
 
 const Home = () => {
   return (
@@ -28,13 +35,34 @@ const Home = () => {
                 <div className={s.internet}>
                   <h4 className={s.internetTitle}>Me on the internet</h4>
                   <div className={s.socials}>
-                    <a href="#" className={s.social}>Twitter</a>
-                    <a href="#" className={s.social}>Facebook</a>
-                    <a href="#" className={s.social}>Instagram</a>
-                    <a href="#" className={s.social}>LinkedIn</a>
-                    <a href="#" className={s.social}>Github</a>
-                    <a href="#" className={s.social}>Crunchbase</a>
-                    <a href="#" className={s.social}>VK</a>
+                    <a href="https://twitter.com/khristenko_e" className={s.social}>
+											<Image src={twitter}/>
+											Twitter
+										</a>
+                    <a href="https://www.facebook.com/KhristenkoEvgenyy" className={s.social}>
+											<Image src={facebook}/>
+											Facebook
+											</a>
+                    <a href="#" className={s.social}>
+										<Image src={instagram}/>
+											Instagram
+											</a>
+                    <a href="#" className={s.social}>
+										<Image src={linkedin}/>
+											LinkedIn
+											</a>
+                    <a href="#" className={s.social}>
+										<Image src={github}/>
+											Github
+											</a>
+                    <a href="#" className={s.social}>
+										<Image src={crunchbase}/>
+											Crunchbase
+											</a>
+                    <a href="#" className={s.social}>
+										<Image src={vk}/>
+											VK
+											</a>
                   </div>
                 </div>
                 <div className={s.separator}></div>
@@ -47,7 +75,7 @@ const Home = () => {
               </div>
             </div>
             <div className={s.imgContainer}>
-              <img unselectable="on" className={s.img} src={Me.src} />
+              <img draggable={false} unselectable="on" className={s.img} src={me.src} />
             </div>
           </article>
           <aside>

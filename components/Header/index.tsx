@@ -2,7 +2,7 @@ import s from './Header.module.sass';
 
 const Header = () => {
   return (
-    <header className={s.header}>Header</header>
+    <header className={s.header}></header>
   );
 };
 
