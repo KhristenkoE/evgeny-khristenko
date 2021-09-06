@@ -75,7 +75,7 @@ const Home = () => {
               </div>
             </div>
             <div className={s.imgContainer}>
-              <img draggable={false} unselectable="on" className={s.img} src={me.src} />
+              <Image loader={() => me.src} draggable={false} unselectable="on" className={s.img} src={me.src} />
             </div>
           </article>
           <aside>
