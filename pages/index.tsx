@@ -36,31 +36,31 @@ const Home = () => {
                   <h4 className={s.internetTitle}>Me on the internet</h4>
                   <div className={s.socials}>
                     <a href="https://twitter.com/khristenko_e" target="_blank" rel="noreferer" className={s.social}>
-											<img src={twitter} />
+											<img src={twitter.src} />
 											Twitter
 										</a>
                     <a href="https://www.facebook.com/KhristenkoEvgenyy" target="_blank" rel="noreferer" className={s.social}>
-											<img src={facebook} />
+											<img src={facebook.src} />
 											Facebook
 											</a>
                     <a href="https://instagram.com/evgeny_khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<img src={instagram} />
+										<img src={instagram.src} />
 											Instagram
 											</a>
                     <a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<img src={linkedin} />
+										<img src={linkedin.src} />
 											LinkedIn
 											</a>
                     <a href="https://github.com/KhristenkoE" target="_blank" rel="noreferer" className={s.social}>
-										<img src={github} />
+										<img src={github.src} />
 											Github
 											</a>
                     <a href="https://crunchbase.com/person/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<img src={crunchbase} />
+										<img src={crunchbase.src} />
 											Crunchbase
 											</a>
                     <a href="https://vk.com/khristenkoe" target="_blank" rel="noreferer" className={s.social}>
-										<img src={vk} />
+										<img src={vk.src} />
 											VK
 											</a>
                   </div>
