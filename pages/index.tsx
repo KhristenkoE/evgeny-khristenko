@@ -36,31 +36,31 @@ const Home = () => {
                   <h4 className={s.internetTitle}>Me on the internet</h4>
                   <div className={s.socials}>
                     <a href="https://twitter.com/khristenko_e" target="_blank" rel="noreferer" className={s.social}>
-											<Image loader={() => twitter.src} src={twitter}/>
+											<img src={twitter} />
 											Twitter
 										</a>
                     <a href="https://www.facebook.com/KhristenkoEvgenyy" target="_blank" rel="noreferer" className={s.social}>
-											<Image loader={() => facebook.src} src={facebook}/>
+											<img src={facebook} />
 											Facebook
 											</a>
                     <a href="https://instagram.com/evgeny_khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<Image loader={() => instagram.src} src={instagram}/>
+										<img src={instagram} />
 											Instagram
 											</a>
                     <a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<Image loader={() => linkedin.src} src={linkedin}/>
+										<img src={linkedin} />
 											LinkedIn
 											</a>
                     <a href="https://github.com/KhristenkoE" target="_blank" rel="noreferer" className={s.social}>
-										<Image loader={() => github.src} src={github}/>
+										<img src={github} />
 											Github
 											</a>
                     <a href="https://crunchbase.com/person/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<Image loader={() => crunchbase.src} src={crunchbase}/>
+										<img src={crunchbase} />
 											Crunchbase
 											</a>
                     <a href="https://vk.com/khristenkoe" target="_blank" rel="noreferer" className={s.social}>
-										<Image loader={() => vk.src} src={vk}/>
+										<img src={vk} />
 											VK
 											</a>
                   </div>
@@ -75,7 +75,7 @@ const Home = () => {
               </div>
             </div>
             <div className={s.imgContainer}>
-              <Image loader={() => me.src} draggable={false} unselectable="on" className={s.img} src={me.src} />
+              <img draggable={false} unselectable="on" className={s.img} src={me.src} />
             </div>
           </article>
           <aside>
