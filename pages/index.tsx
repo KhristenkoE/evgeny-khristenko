@@ -27,9 +27,7 @@ const Home = () => {
           <article className={s.heroContent}>
             <div className={s.textContainer}>
               <h1 className={s.title}>Hi! I’m Evgeny Khristenko.</h1>
-              <p className={s.description}>A fullstack developer with 3 years of experience in the area.
-                My goal is to make the world a better place by creating
-                digital products and helping people solve their problems.
+              <p className={s.description}>Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications
               </p>
               <div className={s.socialsBlock}>
                 <div className={s.internet}>
