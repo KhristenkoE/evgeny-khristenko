@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <meta name="" title="Evgeny Khristenko" />
+				<meta name="description" content="Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications" />
         <title>Evgeny Khristenko | Full stack developer</title>
       </Head>
       <main>
