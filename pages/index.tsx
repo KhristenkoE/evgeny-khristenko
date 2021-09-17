@@ -23,7 +23,7 @@ const Home = () => {
       </Head>
       <main>
         <Section containerClassName={s.heroContainer} className={s.hero}>
-          {/* <Header /> */}
+          <Header />
           <article className={s.heroContent}>
             <div className={s.textContainer}>
               <h1 className={s.title}>Hi! I’m Evgeny Khristenko.</h1>
