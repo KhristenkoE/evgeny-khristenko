@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <meta name="" title="Evgeny Khristenko" />
+				<meta name="description" content="Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications" />
         <title>Evgeny Khristenko | Full stack developer</title>
       </Head>
       <main>
@@ -27,40 +27,38 @@ const Home = () => {
           <article className={s.heroContent}>
             <div className={s.textContainer}>
               <h1 className={s.title}>Hi! I’m Evgeny Khristenko.</h1>
-              <p className={s.description}>A fullstack developer with 3 years of experience in the area.
-                My goal is to make the world a better place by creating
-                digital products and helping people solve their problems.
+              <p className={s.description}>Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications
               </p>
               <div className={s.socialsBlock}>
                 <div className={s.internet}>
                   <h4 className={s.internetTitle}>Me on the internet</h4>
                   <div className={s.socials}>
-                    <a href="https://twitter.com/khristenko_e" target="_blank" rel="noopener" className={s.social}>
-											<Image loader={() => twitter.src} src={twitter}/>
+                    <a href="https://twitter.com/khristenko_e" target="_blank" rel="noreferer" className={s.social}>
+											<img src={twitter.src} />
 											Twitter
 										</a>
-                    <a href="https://www.facebook.com/KhristenkoEvgenyy" target="_blank" rel="noopener" className={s.social}>
-											<Image loader={() => facebook.src} src={facebook}/>
+                    <a href="https://www.facebook.com/KhristenkoEvgenyy" target="_blank" rel="noreferer" className={s.social}>
+											<img src={facebook.src} />
 											Facebook
 											</a>
-                    <a href="https://instagram.com/evgeny_khristenko" target="_blank" rel="noopener" className={s.social}>
-										<Image loader={() => instagram.src} src={instagram}/>
+                    <a href="https://instagram.com/evgeny_khristenko" target="_blank" rel="noreferer" className={s.social}>
+										<img src={instagram.src} />
 											Instagram
 											</a>
-                    <a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" rel="noopener" className={s.social}>
-										<Image loader={() => linkedin.src} src={linkedin}/>
+                    <a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
+										<img src={linkedin.src} />
 											LinkedIn
 											</a>
-                    <a href="https://github.com/KhristenkoE" target="_blank" rel="noopener" className={s.social}>
-										<Image loader={() => github.src} src={github}/>
+                    <a href="https://github.com/KhristenkoE" target="_blank" rel="noreferer" className={s.social}>
+										<img src={github.src} />
 											Github
 											</a>
-                    <a href="https://crunchbase.com/person/evgeny-khristenko" target="_blank" rel="noopener" className={s.social}>
-										<Image loader={() => crunchbase.src} src={crunchbase}/>
+                    <a href="https://crunchbase.com/person/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
+										<img src={crunchbase.src} />
 											Crunchbase
 											</a>
-                    <a href="https://vk.com/khristenkoe" target="_blank" rel="noopener" className={s.social}>
-										<Image loader={() => vk.src} src={vk}/>
+                    <a href="https://vk.com/khristenkoe" target="_blank" rel="noreferer" className={s.social}>
+										<img src={vk.src} />
 											VK
 											</a>
                   </div>
@@ -79,7 +77,7 @@ const Home = () => {
             </div>
           </article>
           <aside>
-            Nav
+            {/* Nav */}
           </aside>
         </Section>
       </main>
