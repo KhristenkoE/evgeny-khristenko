@@ -23,6 +23,7 @@
       "@styles/*": ["styles/*"],
       "@static/*": ["static/*"],
       "@pages/*": ["pages/*"],
+			"@data/*": ["data/*"]
     }
   },
   "include": [

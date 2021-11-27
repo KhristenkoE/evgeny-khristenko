@@ -1,0 +1,66 @@
+{
+	"ru": {
+		"hero": {
+			"title": "Привет! Я Евгений Христенко",
+			"description": "Fullstack разработчик. Я придумываю инновационные идеи для цифровых продуктов и реализовываю их с помощью моего 3х летнего опыта разработки Frontend, Backend и Mobile приложений.",
+			"socials_title": "Я в интернете",
+			"me_img_alt": "Фото Евгения Христенко"
+		},
+		"footer": {
+			"mates_block": "Моя команда",
+			"working_on_block": "Работаю над"
+		},
+		"meta": {
+			"title": "Евгений Христенко | Full stack разработчик",
+			"description": "Fullstack разработчик. Я придумываю инновационные идеи для цифровых продуктов и реализовываю их с помощью моего 3х летнего опыта разработки Frontend, Backend и Mobile приложений."
+		}
+	},
+	"en": {
+		"hero": {
+			"title": "Hi! I'm Evgeny Khristenko",
+			"description": "Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications",
+			"socials_title": "Me on the internet",
+			"me_img_alt": "Photo of Evgeny Khristenko"
+		},
+		"footer": {
+			"mates_block": "My teammates",
+			"working_on_block": "Currently working on"
+		},
+		"meta": {
+			"title": "Evgeny Khristenko | Full stack разработчик",
+			"description": "Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications"
+		}
+	},
+	"it": {
+		"hero": {
+			"title": "Ciao! Sono Evgeny Khristenko",
+			"description": "Sviluppatore completo. Elaboro idee innovative per prodotti digitali e le realizzo utilizzando la mia conoscenza dell'architettura software e 3 anni di esperienza nella programmazione di applicazioni frontend, backend e mobili",
+			"socials_title": "Io su internet",
+			"me_img_alt": "Foto di Evgeny Khristenko"
+		},
+		"footer": {
+			"mates_block": "La mia squadra",
+			"working_on_block": "lavorando su"
+		},
+		"meta": {
+			"title": "Evgeny Khristenko / Sviluppatore stack completo",
+			"description": "Sviluppatore completo. Elaboro idee innovative per prodotti digitali e le realizzo utilizzando la mia conoscenza dell'architettura software e 3 anni di esperienza nella programmazione di applicazioni frontend, backend e mobili"
+		}
+	},
+	"fr": {
+		"hero": {
+			"title": "Salut! Je suis Evgeny Khristenko",
+			"description": "Développeur Full stack. Je propose des idées innovantes pour des produits numériques et les implémente en utilisant mes connaissances en architecture logicielle et 3 ans d'expérience dans la programmation d'applications frontend, backend et mobiles",
+			"socials_title": "Moi sur internet",
+			"me_img_alt": "Photo d'Evgueni Khristenko"
+		},
+		"footer": {
+			"mates_block": "Mes coéquipiers",
+			"working_on_block": "travaille actuellement sur"
+		},
+		"meta": {
+			"title": "Evgeny Khristenko / Développeur Full stack",
+			"description": "Développeur Full stack. Je propose des idées innovantes pour des produits numériques et les implémente en utilisant mes connaissances en architecture logicielle et 3 ans d'expérience dans la programmation d'applications frontend, backend et mobiles"
+		}
+	}
+}

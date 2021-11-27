@@ -1,88 +1,41 @@
+import React, { useContext } from 'react';
+
 import Head from 'next/head';
-import Image from 'next/image';
 
-import s from '@styles/Home.module.sass';
-import Header from '@components/Header';
-import Section from '@components/Section';
+import translationsContex from 'contexts/Translations';
 
-import me from '@static/img/me.jpg';
-import twitter from '@static/img/twitter.svg';
-import facebook from '@static/img/facebook.svg';
-import instagram from '@static/img/instagram.svg';
-import linkedin from '@static/img/linkedin.svg';
-import github from '@static/img/github.svg';
-import crunchbase from '@static/img/twitter.svg';
-import vk from '@static/img/twitter.svg';
+import Hero from '@components/Hero';
+import Footer from '@components/Footer';
 
 const Home = () => {
-  return (
-    <>
-      <Head>
-				<meta name="description" content="Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications" />
-        <title>Evgeny Khristenko | Full stack developer</title>
-      </Head>
-      <main>
-        <Section containerClassName={s.heroContainer} className={s.hero}>
-          <Header />
-          <article className={s.heroContent}>
-            <div className={s.textContainer}>
-              <h1 className={s.title}>Hi! I’m Evgeny Khristenko.</h1>
-              <p className={s.description}>Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications
-              </p>
-              <div className={s.socialsBlock}>
-                <div className={s.internet}>
-                  <h4 className={s.internetTitle}>Me on the internet</h4>
-                  <div className={s.socials}>
-                    <a href="https://twitter.com/khristenko_e" target="_blank" rel="noreferer" className={s.social}>
-											<img src={twitter.src} />
-											Twitter
-										</a>
-                    <a href="https://www.facebook.com/KhristenkoEvgenyy" target="_blank" rel="noreferer" className={s.social}>
-											<img src={facebook.src} />
-											Facebook
-											</a>
-                    <a href="https://instagram.com/evgeny_khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<img src={instagram.src} />
-											Instagram
-											</a>
-                    <a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<img src={linkedin.src} />
-											LinkedIn
-											</a>
-                    <a href="https://github.com/KhristenkoE" target="_blank" rel="noreferer" className={s.social}>
-										<img src={github.src} />
-											Github
-											</a>
-                    <a href="https://crunchbase.com/person/evgeny-khristenko" target="_blank" rel="noreferer" className={s.social}>
-										<img src={crunchbase.src} />
-											Crunchbase
-											</a>
-                    <a href="https://vk.com/khristenkoe" target="_blank" rel="noreferer" className={s.social}>
-										<img src={vk.src} />
-											VK
-											</a>
-                  </div>
-                </div>
-                <div className={s.separator}></div>
-                <div className={s.mail}>
-                  <form className={s.mailForm}>
-                    <textarea spellCheck="true" autoCorrect="on" autoComplete="on" className={s.mailMessage} placeholder="Message" />
-                    <button className={s.mailButton} type="submit">Send</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div className={s.imgContainer}>
-              <img draggable={false} unselectable="on" className={s.img} src={me.src} />
-            </div>
-          </article>
-          <aside>
-            {/* Nav */}
-          </aside>
-        </Section>
-      </main>
-    </>
-  );
+	const { data: content } = useContext(translationsContex);
+
+	return content ? (
+		<>
+			<Head>
+				<title>{content.meta.title}</title>
+				<meta name="description" content={content.meta.description} />
+				<meta name="title" content={content.meta.title} />
+				<meta name="url" content="https://evgenykhristenko.com" />
+				<meta name="copyright" content="Evgeny khristenko" />
+				<meta name="robots" content="index, follow" />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://evgenykhristenko.com" />
+				<meta property="og:title" content={content.meta.title} />
+				<meta property="og:description" content={content.meta.description} />
+				<link rel="alternate" href="https://en.evgenykrhistenko.com" hrefLang="en" />
+				<link rel="alternate" href="https://ru.evgenykrhistenko.com" hrefLang="ru" />
+				<link rel="alternate" href="https://it.evgenykrhistenko.com" hrefLang="it" />
+				<link rel="alternate" href="https://fr.evgenykrhistenko.com" hrefLang="fr" />
+				<link rel="alternate" href="https://evgenykrhistenko.com" hrefLang="x-default" />
+				<link rel="canonical" href="https://evgenykhristenko.com" />
+			</Head>
+			<main>
+				<Hero content={content.hero} />
+				<Footer content={content.footer} />
+			</main>
+		</>
+	) : null;
 };
 
 export default Home;
