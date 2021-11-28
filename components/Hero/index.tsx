@@ -45,7 +45,7 @@ const Hero = ({
 									Facebook
 								</a>
 								<a href="https://instagram.com/evgeniy_khristenko" target="_blank" rel="noreferrerr" className={s.social}>
-									<img src={instagram.src} alt="instagInstagramram" />
+									<img src={instagram.src} alt="Instagram" />
 									Instagram
 								</a>
 								<a href="https://linkedin.com/in/evgeny-khristenko" target="_blank" rel="noreferrerr" className={s.social}>

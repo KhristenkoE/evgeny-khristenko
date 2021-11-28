@@ -1,3 +1,5 @@
+@import '../../styles/sassVariables.sass'
+
 .footer
 	height: 200px
 
@@ -5,6 +7,9 @@
 	display: grid
 	column-gap: 100px
 	grid-template-columns: repeat(2, max-content)
+	@media (max-width: $max-mobile-width)
+		grid-template-columns: none
+		grid-template-rows: repeat(2, min-content)
 
 .infoTitle
 	font-size: 25px

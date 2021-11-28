@@ -1,5 +1,7 @@
 @import '../../styles/sassVariables.sass'
 
 .section
-  max-width: $max-tablet-width
-  margin: 0 auto
+	max-width: $max-tablet-width
+	margin: 0 auto
+	@media (max-width: $max-mobile-width)
+		padding: 0 20px

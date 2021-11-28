@@ -7,6 +7,8 @@ import translationsContex from 'contexts/Translations';
 import Hero from '@components/Hero';
 import Footer from '@components/Footer';
 
+import s from '@styles/Home.module.sass';
+
 const Home = () => {
 	const { data: content } = useContext(translationsContex);
 
@@ -29,7 +31,7 @@ const Home = () => {
 				<link rel="alternate" href="https://fr.evgenykrhistenko.com" hrefLang="fr" />
 				<link rel="alternate" href="https://evgenykrhistenko.com" hrefLang="x-default" />
 			</Head>
-			<main>
+			<main className={s.main}>
 				<Hero content={content.hero} />
 				<Footer content={content.footer} />
 			</main>

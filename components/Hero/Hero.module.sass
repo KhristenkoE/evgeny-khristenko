@@ -1,7 +1,11 @@
+@import '../../styles/sassVariables.sass'
+
 .hero
 	height: 100vh
 	display: grid
 	grid-template-rows: min-content 1fr min-content
+	@media (max-width: $max-mobile-width)
+		height: auto
 
 .heroContent
 	display: grid
@@ -9,6 +13,9 @@
 	align-items: center
 	grid-template-columns: 55% 45%
 	column-gap: 40px
+	@media (max-width: $max-mobile-width)
+		display: flex
+		flex-direction: column-reverse
 
 .textContainer
 	height: fit-content
@@ -24,6 +31,9 @@
 
 .imgContainer
 	height: 100%
+	@media (max-width: $max-mobile-width)
+		height: auto
+		margin-bottom: 20px
 
 .img
 	border-radius: 5px
@@ -32,16 +42,25 @@
 	object-fit: cover
 	user-select: none
 	pointer-events: none
+	@media (max-width: $max-mobile-width)
+		width: 200px
+		height: 200px
+		border-radius: 50%
 
 .separator
 	height: 100%
 	width: 1px
 	background-color: #21252B
+	@media (max-width: $max-mobile-width)
+		display: none
 
 .socialsBlock
 	display: grid
 	grid-template-columns: max-content 1px 1fr
 	column-gap: 20px
+	@media (max-width: $max-mobile-width)
+		grid-template-columns: none
+		grid-template-rows: 1fr 1fr
 
 .internetTitle
 	font-size: 30px
