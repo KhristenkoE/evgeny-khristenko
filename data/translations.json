@@ -27,7 +27,7 @@
 			"working_on_block": "Currently working on"
 		},
 		"meta": {
-			"title": "Evgeny Khristenko | Full stack разработчик",
+			"title": "Evgeny Khristenko | Full stack developer",
 			"description": "Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications"
 		}
 	},
@@ -61,6 +61,22 @@
 		"meta": {
 			"title": "Evgeny Khristenko / Développeur Full stack",
 			"description": "Développeur Full stack. Je propose des idées innovantes pour des produits numériques et les implémente en utilisant mes connaissances en architecture logicielle et 3 ans d'expérience dans la programmation d'applications frontend, backend et mobiles"
+		}
+	},
+	"jp": {
+		"hero": {
+			"title": "こんにちは! 私は Evgeny Khristenko",
+			"description": "フルスタック開発者。 私はデジタル製品のための革新的なアイデアを発明し、フロントエンド、バックエンド、モバイルアプリケーションにおけるソフトウェアアーキテクチャと経験の知識を持っています。",
+			"socials_title": "インターネット上の私",
+			"me_img_alt": "エフゲニー-クリステンコの写真"
+		},
+		"footer": {
+			"mates_block": "私のチームメイト",
+			"working_on_block": "現在取り組んでいる"
+		},
+		"meta": {
+			"title": "Evgeny Khristenko/フルスタック開発者",
+			"description": "フルスタック開発者。 私はデジタル製品のための革新的なアイデアを発明し、フロントエンド、バックエンド、モバイルアプリケーションにおけるソフトウェアアーキテクチャと経験の知識を持っています。"
 		}
 	}
 }
