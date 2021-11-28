@@ -70,7 +70,7 @@ const Hero = ({
 						<div className={s.mail}>
 							<form className={s.mailForm}>
 								<textarea onChange={({ target: { value } }) => setEmailValue(value)} value={emailValue} spellCheck="true" autoCorrect="on" autoComplete="on" className={s.mailMessage} placeholder="Message" />
-								<a className={s.mailButton} href={`mailto:ekhristenko0@gmail.com?body=${emailValue}`}>Send</a>
+								<a className={s.mailButton} href={`mailto:business.ekhristenko@gmail.com?body=${emailValue}`}>Send</a>
 							</form>
 						</div>
 					</div>
