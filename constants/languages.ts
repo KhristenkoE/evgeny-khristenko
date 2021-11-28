@@ -3,4 +3,5 @@ export enum CountryISOCode {
 	FR = 'fr',
 	IT = 'it',
 	EN = 'en',
+	JP = 'jp',
 }
