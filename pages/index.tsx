@@ -28,7 +28,6 @@ const Home = () => {
 				<link rel="alternate" href="https://it.evgenykrhistenko.com" hrefLang="it" />
 				<link rel="alternate" href="https://fr.evgenykrhistenko.com" hrefLang="fr" />
 				<link rel="alternate" href="https://evgenykrhistenko.com" hrefLang="x-default" />
-				<link rel="canonical" href="https://evgenykhristenko.com" />
 			</Head>
 			<main>
 				<Hero content={content.hero} />
