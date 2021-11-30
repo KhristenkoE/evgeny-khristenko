@@ -8,8 +8,17 @@ import Hero from '@components/Hero';
 import Footer from '@components/Footer';
 
 import s from '@styles/Home.module.sass';
+import { CountryISOCode } from 'constants/languages';
 
-const Home = () => {
+import me from '@static/img/me.jpg';
+
+interface Props {
+	localization: CountryISOCode
+}
+
+const Home = ({
+	localization,
+}: Props) => {
 	const { data: content } = useContext(translationsContex);
 
 	return content ? (
@@ -25,6 +34,13 @@ const Home = () => {
 				<meta property="og:url" content="https://evgenykhristenko.com" />
 				<meta property="og:title" content={content.meta.title} />
 				<meta property="og:description" content={content.meta.description} />
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:site:id" content="@khristenko_e" />
+				<meta name="twitter:creator" content="@khristenko_e" />
+				<meta name="twitter:title" content={content.meta.title} />
+				<meta name="twitter:description" content={content.meta.description} />
+				<meta name="twitter:image" content={me.src} />
+				<meta name="twitter:image:alt" content={content.meta.title} />
 				<link rel="alternate" href="https://en.evgenykrhistenko.com" hrefLang="en" />
 				<link rel="alternate" href="https://ru.evgenykrhistenko.com" hrefLang="ru" />
 				<link rel="alternate" href="https://it.evgenykrhistenko.com" hrefLang="it" />

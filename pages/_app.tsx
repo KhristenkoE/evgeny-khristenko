@@ -11,20 +11,20 @@ import { CountryISOCode } from 'constants/languages';
 import translations from '../data/translations.json';
 
 const App = ({ Component, pageProps }) => {
-	const [language, setLanguage] = useState<CountryISOCode | null>(null);
+	const [localization, setLocalization] = useState<CountryISOCode | null>(null);
 
-	const content = useMemo(() => language ? translations[language] : null, [translations, language]);
+	const content = useMemo(() => localization ? translations[localization] : null, [translations, localization]);
 
 	useEffect(() => {
 		const localizationFromURL = location.host.match(/(.{2,5})\./)?.[1]; // match subdomain, which is actually a language or country code
 		const localization = Object.values(CountryISOCode).find((item) => localizationFromURL === item);
 
-		setLanguage(localization ?? CountryISOCode.EN);
+		setLocalization(localization ?? CountryISOCode.EN);
 	}, []);
 
 	return (
 		<translationsContex.Provider value={{ data: content }}>
-			<Component {...pageProps} />
+			<Component {...pageProps} localization={localization} />
 		</translationsContex.Provider>
 	);
 };

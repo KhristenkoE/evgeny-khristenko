@@ -5,7 +5,7 @@ import s from './Hero.module.sass';
 import Header from '@components/Header';
 import Section from '@components/Section';
 
-import me from '@static/img/me.jpeg';
+import me from '@static/img/me.jpg';
 import twitter from '@static/img/twitter.svg';
 import facebook from '@static/img/facebook.svg';
 import instagram from '@static/img/instagram.svg';
