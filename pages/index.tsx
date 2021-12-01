@@ -39,13 +39,11 @@ const Home = ({
 				<meta name="twitter:creator" content="@khristenko_e" />
 				<meta name="twitter:title" content={content.meta.title} />
 				<meta name="twitter:description" content={content.meta.description} />
-				<meta name="twitter:image" content={me.src} />
+				<meta name="twitter:image" content="https://www.evgenykhristenko.com/_next/static/image/static/img/me.18d7e2f07ae758c66e4ac5f56a7bde53.jpg" />
 				<meta name="twitter:image:alt" content={content.meta.title} />
-				<link rel="alternate" href="https://en.evgenykrhistenko.com" hrefLang="en" />
-				<link rel="alternate" href="https://ru.evgenykrhistenko.com" hrefLang="ru" />
-				<link rel="alternate" href="https://it.evgenykrhistenko.com" hrefLang="it" />
-				<link rel="alternate" href="https://fr.evgenykrhistenko.com" hrefLang="fr" />
-				<link rel="alternate" href="https://evgenykrhistenko.com" hrefLang="x-default" />
+				{/* About alternate from google https://developers.google.com/search/docs/advanced/crawling/localized-versions */}
+				{Object.values(CountryISOCode).map((code) => <link rel="alternate" href={`https://${code}.evgenykhristenko.com`} hrefLang={code} />)}
+				<link rel="alternate" href="https://evgenykhristenko.com" hrefLang="x-default" />
 			</Head>
 			<main className={s.main}>
 				<Hero content={content.hero} />
