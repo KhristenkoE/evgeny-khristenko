@@ -34,6 +34,7 @@ const Home = ({
 				<meta property="og:url" content="https://evgenykhristenko.com" />
 				<meta property="og:title" content={content.meta.title} />
 				<meta property="og:description" content={content.meta.description} />
+				<meta property="og:image" content="https://www.evgenykhristenko.com/_next/static/image/static/img/me.18d7e2f07ae758c66e4ac5f56a7bde53.jpg" />
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site:id" content="@khristenko_e" />
 				<meta name="twitter:creator" content="@khristenko_e" />
