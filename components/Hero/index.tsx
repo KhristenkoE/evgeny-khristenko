@@ -29,7 +29,7 @@ const Hero = ({
 			<Header />
 			<article className={s.heroContent}>
 				<div className={s.textContainer}>
-					<h1 className={s.title}>{content.title}</h1>
+					<h1 className={s.title} dangerouslySetInnerHTML={{ __html: content.title }} />
 					<p className={s.description}>
 						{content.description}
 					</p>

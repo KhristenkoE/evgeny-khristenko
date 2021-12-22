@@ -1,9 +1,9 @@
 {
 	"ru": {
 		"hero": {
-			"title": "Привет! Я Евгений Христенко",
-			"description": "Fullstack разработчик. Я придумываю инновационные идеи для цифровых продуктов и реализовываю их с помощью моего 3х летнего опыта разработки Frontend, Backend и Mobile приложений.",
-			"socials_title": "Я в интернете",
+			"title": "CTO Евгений Христенко. </br> Инновации в цифровых продуктах.",
+			"description": "Я придумываю инновационные идеи для цифровых продуктов, создаю их техническую архитектуру и реализовываю их, используя опыт в создании веб и мобильных приложений.",
+			"socials_title": "Мои соцсети",
 			"me_img_alt": "Фото Евгения Христенко"
 		},
 		"footer": {
@@ -11,15 +11,15 @@
 			"working_on_block": "Работаю над"
 		},
 		"meta": {
-			"title": "Евгений Христенко | Full stack разработчик",
+			"title": "Евгений Христенко | CTO, Full-stack разработчик",
 			"description": "Fullstack разработчик. Я придумываю инновационные идеи для цифровых продуктов и реализовываю их с помощью моего 3х летнего опыта разработки Frontend, Backend и Mobile приложений."
 		}
 	},
 	"en": {
 		"hero": {
-			"title": "Hi! I'm Evgeny Khristenko",
-			"description": "Fullstack developer. I come up with innovative ideas for digital products and implement them using my knowledge of software architecture and 3-years experience in programming frontend, backend and mobile applications",
-			"socials_title": "Me on the internet",
+			"title": "CTO Evgeny Khristenko. </br> Digital products innovations architecture.",
+			"description": "I come up with innovative ideas for digital products, create their technical architecture and implement them with my experience in making web and mobile applications.",
+			"socials_title": "My socials",
 			"me_img_alt": "Photo of Evgeny Khristenko"
 		},
 		"footer": {
@@ -33,7 +33,7 @@
 	},
 	"it": {
 		"hero": {
-			"title": "Ciao! Sono Evgeny Khristenko",
+			"title": "CTO Evgeny Khristenko",
 			"description": "Sviluppatore completo. Elaboro idee innovative per prodotti digitali e le realizzo utilizzando la mia conoscenza dell'architettura software e 3 anni di esperienza nella programmazione di applicazioni frontend, backend e mobili",
 			"socials_title": "Io su internet",
 			"me_img_alt": "Foto di Evgeny Khristenko"
@@ -49,7 +49,7 @@
 	},
 	"fr": {
 		"hero": {
-			"title": "Salut! Je suis Evgeny Khristenko",
+			"title": "CTO Evgeny Khristenko",
 			"description": "Développeur Full stack. Je propose des idées innovantes pour des produits numériques et les implémente en utilisant mes connaissances en architecture logicielle et 3 ans d'expérience dans la programmation d'applications frontend, backend et mobiles",
 			"socials_title": "Moi sur internet",
 			"me_img_alt": "Photo d'Evgueni Khristenko"
@@ -65,7 +65,7 @@
 	},
 	"jp": {
 		"hero": {
-			"title": "こんにちは! 私は Evgeny Khristenko",
+			"title": "CTO Evgeny Khristenko",
 			"description": "フルスタック開発者。 私はデジタル製品のための革新的なアイデアを発明し、フロントエンド、バックエンド、モバイルアプリケーションにおけるソフトウェアアーキテクチャと経験の知識を持っています。",
 			"socials_title": "インターネット上の私",
 			"me_img_alt": "エフゲニー-クリステンコの写真"
