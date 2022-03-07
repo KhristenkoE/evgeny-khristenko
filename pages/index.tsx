@@ -11,6 +11,7 @@ import s from '@styles/Home.module.sass';
 import { CountryISOCode } from 'constants/languages';
 
 import me from '@static/img/me.jpg';
+import CV from '@components/CV';
 
 interface Props {
 	localization: CountryISOCode
@@ -43,11 +44,12 @@ const Home = ({
 				<meta name="twitter:image" content="https://www.evgenykhristenko.com/_next/static/image/static/img/me.18d7e2f07ae758c66e4ac5f56a7bde53.jpg" />
 				<meta name="twitter:image:alt" content={content.meta.title} />
 				{/* About alternate from google https://developers.google.com/search/docs/advanced/crawling/localized-versions */}
-				{Object.values(CountryISOCode).map((code) => <link rel="alternate" href={`https://${code}.evgenykhristenko.com`} hrefLang={code} />)}
+				{Object.values(CountryISOCode).map((code) => <link key={code} rel="alternate" href={`https://${code}.evgenykhristenko.com`} hrefLang={code} />)}
 				<link rel="alternate" href="https://evgenykhristenko.com" hrefLang="x-default" />
 			</Head>
 			<main className={s.main}>
 				<Hero content={content.hero} />
+				<CV />
 				<Footer content={content.footer} />
 			</main>
 		</>

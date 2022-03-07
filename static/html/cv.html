@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Evgeny Khristenko</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #dddddd;
+	border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #bbbbbb;
+	border-radius: 20px;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="205cb98b-3b41-4675-962b-84b2c967eada" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="../img/me_look.jpeg"/></div><h1 class="page-title">Evgeny Khristenko</h1></header><div class="page-body"><h1 id="0785e5e5-01d7-4418-a3b4-7544d463fc83" class="">Tagline 👇</h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="beb17d97-9bc3-40df-8960-8906b189f99e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Evgeny Khristenko. CTO &amp; Full-stack developer. I come up with innovative ideas for digital products, create their technical architecture and implement them with my experience in creating web and mobile applications.</div></figure><h1 id="febb26bf-675b-4a61-877d-46ac02b5c428" class="">Contacts 📞</h1><p id="96c44bde-6f90-4894-b2f9-4fd556d9fc05" class=""><mark class="highlight-gray">email:</mark> ekhristenko0@gmail.com</p><p id="ec96b323-fd7d-4013-8080-cb3197440238" class=""><mark class="highlight-gray">site:</mark> <a href="https://evgenykhristenko.com">evgenykhristenko.com</a></p><h1 id="556f7082-9e5b-4340-adda-bee092b7c39b" class="">Skills 🤹</h1><h3 id="0a630ade-65e6-4db0-9dd1-2c37afd14533" class="">Management</h3><ul id="458a1f9b-f791-48b1-94bf-7589d496eb42" class="bulleted-list"><li style="list-style-type:disc">Root Cause Analysis</li></ul><ul id="84f6756f-8117-40a0-98b4-6dc3a2da76d8" class="bulleted-list"><li style="list-style-type:disc">One-on-one</li></ul><ul id="1e10fd69-d8cf-4290-8beb-ff72915ac317" class="bulleted-list"><li style="list-style-type:disc">Agile, scum</li></ul><ul id="5f4964f6-ea54-4c81-9d3c-a843be40247f" class="bulleted-list"><li style="list-style-type:disc">Giving open lectures, pare coding</li></ul><ul id="40bcb21d-663b-4c5f-90e6-dfe07e1d7a41" class="bulleted-list"><li style="list-style-type:disc">Community management</li></ul><ul id="d6ba70dc-47e0-4f9d-8c74-bd8fb7119ab3" class="bulleted-list"><li style="list-style-type:disc">Mentoring</li></ul><ul id="d42dfe62-a04b-4232-bea0-6380ff5d7c21" class="bulleted-list"><li style="list-style-type:disc">Releases</li></ul><ul id="64cad407-3d58-40b9-8f22-3abf77bb1cc7" class="bulleted-list"><li style="list-style-type:disc">Requirements</li></ul><h3 id="e5843db0-0ea0-4ec8-9416-130533790fb9" class="">Languages</h3><ul id="bad938b6-b252-4ecb-92e6-f41df7290b11" class="bulleted-list"><li style="list-style-type:disc">Russian</li></ul><ul id="ad98cf38-3dff-4092-9528-f968a0ea4a36" class="bulleted-list"><li style="list-style-type:disc">English</li></ul><h3 id="43c44b97-fb60-4d34-942b-d167e2d46dc5" class="">Programming Languages</h3><ul id="6a74192e-44b4-42f1-bcec-b0571e388f7c" class="bulleted-list"><li style="list-style-type:disc">Javascript</li></ul><ul id="128f6a63-f148-434d-92f3-d428cf431f3c" class="bulleted-list"><li style="list-style-type:disc">Typescript</li></ul><h3 id="5790ae8e-89f9-4338-a592-292f6f3283a0" class="">UI frameworks &amp; libraries</h3><ul id="8806df9f-c088-4874-8264-828dccc5d9dd" class="bulleted-list"><li style="list-style-type:disc">React</li></ul><ul id="bb3e3e00-7949-43fa-b84f-525e8fb97ed3" class="bulleted-list"><li style="list-style-type:disc">React-native</li></ul><ul id="5867ab51-0814-4686-9d6b-84dc751db4a5" class="bulleted-list"><li style="list-style-type:disc">nextJS</li></ul><ul id="3624f657-2b9c-40a2-91a3-5a12063d5be6" class="bulleted-list"><li style="list-style-type:disc">pug</li></ul><ul id="f0a4834c-9103-4a08-bcb9-92e6c7d651fe" class="bulleted-list"><li style="list-style-type:disc">Redux (redux thunk)</li></ul><h3 id="6e4371a6-2556-4bc5-8382-e6321da489ba" class="">Layout</h3><ul id="63bc9e29-6560-4e39-a410-40c861ac994d" class="bulleted-list"><li style="list-style-type:disc">HTML5</li></ul><ul id="2cd0f096-48cc-4d96-af12-b9e175f6765a" class="bulleted-list"><li style="list-style-type:disc">CSS3</li></ul><ul id="6e7e68aa-c7e0-4659-8323-af58ba437e28" class="bulleted-list"><li style="list-style-type:disc">SASS (SCSS)</li></ul><ul id="9642cf8b-7dfd-49dc-80af-8b7295daba8c" class="bulleted-list"><li style="list-style-type:disc">PostCSS</li></ul><h3 id="96bccc15-09db-4b7d-9e95-c32244c641a6" class="">Backend frameworks &amp; libraries</h3><ul id="e5434790-4644-4b9e-875e-a0b450f69072" class="bulleted-list"><li style="list-style-type:disc">NodeJS</li></ul><ul id="a871303e-5b95-4561-9dc2-6de18f6cf911" class="bulleted-list"><li style="list-style-type:disc">expressJS</li></ul><ul id="4dfce262-2ff1-44d0-a907-fbed6335cb29" class="bulleted-list"><li style="list-style-type:disc">nestJS</li></ul><ul id="259f8b86-f2ad-46ce-b0ef-2219eda69087" class="bulleted-list"><li style="list-style-type:disc">Mongoose</li></ul><h3 id="fe1ec14e-8bf9-435c-8793-5302758571d8" class="">DB</h3><ul id="8841f789-a3fd-49b3-9630-cdb39f74f40d" class="bulleted-list"><li style="list-style-type:disc">SQL</li></ul><ul id="c6fd2fed-5b62-44c4-8e8d-dcc066ad07ca" class="bulleted-list"><li style="list-style-type:disc">NoSQL</li></ul><ul id="70c00990-4e6f-44da-ab7a-562cd88c26b1" class="bulleted-list"><li style="list-style-type:disc">MongoDB</li></ul><ul id="65172605-bfb7-4b3e-baf5-f0e139797ecf" class="bulleted-list"><li style="list-style-type:disc">Postgres</li></ul><h3 id="5ad9cc4a-273e-457b-9fde-0690eefd42fb" class="">Development flow</h3><ul id="120d8cae-8676-4380-9f9d-680b09807f0d" class="bulleted-list"><li style="list-style-type:disc">Version Controle System: GIT (Github, Gitlab, GitBash)</li></ul><ul id="509fb14f-4513-44d1-8f13-03596e3efa0e" class="bulleted-list"><li style="list-style-type:disc">🔄 CI | Continuous Integration Pipeline (CDN, TLDs, DNS, BGP, GitLab, CloudFlare Workers / CF / Geolocation / KV / Pages , etc.)</li></ul><ul id="ed1225e7-d0f8-408b-8d42-193fa2044d39" class="bulleted-list"><li style="list-style-type:disc">🚀 CD | Continuous Delivery Pipeline</li></ul><h3 id="7514bddd-d2d1-4474-bbcb-e9eff5d87685" class="">Principles and protocols</h3><ul id="0ad342ad-94f3-4ca9-8829-afd83211a5a7" class="bulleted-list"><li style="list-style-type:disc">http (http/3)</li></ul><ul id="dc03566a-a759-4fa3-8692-4fda46133caf" class="bulleted-list"><li style="list-style-type:disc">SOLID</li></ul><ul id="8fdc2d9a-6924-420a-bcbd-5aaaca34804e" class="bulleted-list"><li style="list-style-type:disc">REST</li></ul><ul id="9d2068d2-f0c8-438d-8611-6d030f2f92dc" class="bulleted-list"><li style="list-style-type:disc">KISS</li></ul><ul id="5a631cbc-14fa-4b96-9843-30261b98ef07" class="bulleted-list"><li style="list-style-type:disc">DRY</li></ul><ul id="62994d2b-09b8-4efc-a28f-bd86e59dd9cf" class="bulleted-list"><li style="list-style-type:disc">Functional programming</li></ul><ul id="47193a41-03ec-406a-912d-324d978a7f09" class="bulleted-list"><li style="list-style-type:disc">Single responsibility</li></ul><ul id="c959ce7b-e052-48d3-8ddd-3ff5696806f2" class="bulleted-list"><li style="list-style-type:disc">OOP</li></ul><ul id="2f90ccc1-7f28-40c6-b0b8-387b47aabd93" class="bulleted-list"><li style="list-style-type:disc">CDN</li></ul><ul id="7e110b88-aec2-4f69-9a1f-5660609c4599" class="bulleted-list"><li style="list-style-type:disc">DNS</li></ul><h3 id="00da9451-81bb-4543-97d4-595dc63a2e26" class="">Other</h3><ul id="2927a404-553b-4717-9cbf-03e4543ed963" class="bulleted-list"><li style="list-style-type:disc">browser extensions</li></ul><ul id="9017cf03-e203-4bf4-b2ac-f18a04931101" class="bulleted-list"><li style="list-style-type:disc">Webpack</li></ul><ul id="86885487-50b4-42a0-b474-0595a41da991" class="bulleted-list"><li style="list-style-type:disc">Docker</li></ul><h1 id="8764776d-c23b-4a0b-b6e9-87e91c6ced70" class="">About 🤲</h1><p id="e2a5d840-0b98-488f-8ce6-fbfea95954c9" class="">My North star in life is helping people improve their lives. Whether it&#x27;s teaching someone, supporting them or building socially relevant products that may solve problems of not just several humans but thousands or millions of.</p><p id="efc6283e-1e60-44f1-947a-73c10e406c27" class="">I’m also really into mentoring. Explaining different tech things or helping someone to understand complex aspects of programming, frameworks, etc and seeing people actually understand those things and grow is the best feeling ever.</p><p id="3166d3d6-ba61-4ea9-824b-1d7d2fa51073" class="">Currently I’ve accomplished a lot in terms of programming, I’m able to build complex projects from scratch, by coming up with a suitable architecture, applying actual technologies, optimizing resources, and considering given project’s budget, etc.</p><p id="b4075641-8926-4407-91b2-e2fcf352cf17" class="">And now I’m between two routes, first is to keep diving deep into programming, and the second one is to go more into management/mentoring/team-leading/CTO stuff.</p><p id="df1815e6-5af3-411a-8d97-d046884cedae" class="">For now I’ve decided to move in both of these direction concurrently. Even though it’s going to be harder than choosing one, I still want to get better at both, because I love both of the areas.</p><h1 id="ecb4d83b-77c2-4aa1-84d1-951b6fe40070" class="">Education 📑</h1><h3 id="4123999f-28de-42d2-9f2c-5a10ededeeb7" class=""><strong>2014-2017</strong>:</h3><p id="7ba12172-0c3d-4907-b804-b2b3c29d91e6" class=""><a href="https://albion89.ru/index">&quot;Albion | Foreign Language Learning Center&quot;</a></p><ul id="91417110-50a5-484e-a9bb-cad6c4875d42" class="bulleted-list"><li style="list-style-type:disc">2014 Beginner</li></ul><ul id="8a897aaa-81a3-46da-9609-27e7d83ffedc" class="bulleted-list"><li style="list-style-type:disc">2015 Elementary</li></ul><ul id="24d1ce7d-120d-4e04-ba23-a4d903228871" class="bulleted-list"><li style="list-style-type:disc">2016 Pre-intermediate</li></ul><ul id="6b7c54cb-c33a-47ef-a84c-2fe5fd6e47eb" class="bulleted-list"><li style="list-style-type:disc">2017 Intermediate<p id="56ed1496-e131-4c05-95db-96665bf3a2ce" class="">Albion is the place where I first time touched English and the place where I got pretty good at it. Albion is a certified languages learning center. I came there being an absolute zero at English but with time learned a ton of grammatical aspects and got full understanding of how the language works.</p></li></ul><h3 id="373bc690-daea-458a-8022-916a7ece35ac" class="">2017-2018:</h3><ul id="982518fe-79be-49f2-af6f-6c541083b305" class="bulleted-list"><li style="list-style-type:disc">Motocross - <a href="https://dmpt.yanao.ru/about/separate/146/">Municipal Autonomous Institution &quot;Youth Center &quot;Nord”</a><p id="720009d2-a508-48d3-a24b-45f5f2ccaaa9" class="">At some point of my life I saw an advertisement about a motocross section in our city, and got interested. Offered my friend to give it a try, and the next day we stated attending the section.</p><p id="bb5679f5-9bd8-4ca4-a3b0-8bb700c3dec7" class="">In &quot;Nord&quot; I learned everything about bikes: how to ride, assemble, and fix them. Since the place, where I lived was very cold, we quite often had to cancel our trainings and fix or improve our bikes instead. I loved this part not less than riding them, because my whole life I was attracted to working with technical stuff. All the knowledge about engines, clutches, etc, that I got there keeps helping me to this day to understand many technical things I encounter at my job.</p><ul id="cc6745b3-7dc3-4c18-b7c0-7db53225ccf9" class="bulleted-list"><li style="list-style-type:circle">Moto duel - 🥇 First place at a local competition</li></ul><ul id="ed9f9038-f92d-4748-bd15-49ed17497b16" class="bulleted-list"><li style="list-style-type:circle">Snowmobile race - 🏅 Participation</li></ul></li></ul><h3 id="688f9192-96ba-480a-baeb-cafe359b2c96" class=""><strong>2018</strong>:</h3><ul id="6955c1d7-a50a-4a5b-ae44-fcb788c12a11" class="bulleted-list"><li style="list-style-type:disc"><strong>HTML/CSS Advanced</strong> course on <a href="https://fructcode.com/">FructCode</a></li></ul><ul id="7a8e06e7-407a-40cc-8d98-61aa8d6051b4" class="bulleted-list"><li style="list-style-type:disc"><strong>Bootstrap 3 course </strong>on <a href="https://fructcode.com/">FructCode</a></li></ul><ul id="dfcec9ea-512e-4b27-8e35-dc54b9c0e1d3" class="bulleted-list"><li style="list-style-type:disc"><strong>JavaScript/jQuery course</strong> on <a href="https://fructcode.com/">FructCode</a></li></ul><p id="4070e884-a5c1-4d17-bf23-ea20d9278616" class="">These were my first programming courses every. At that point of life I knew nothing about how the internet worked. At first it was pretty hard to combine studying at school and learning how to code but with every course I took it got easier. By the end of the FructCode course I was able to create landing pages and simple websites. After I tried to make a couple of test projects and succeeded, I felt like it was time to find a real project. That&#x27;s when I started freelancing.</p><h3 id="2bc9fbd0-a267-44f6-b9d7-39b17f858536" class="">2019:</h3><ul id="541f1bc3-d264-4715-9acc-b838316aa9b6" class="bulleted-list"><li style="list-style-type:disc">&quot;HTML and CSS&quot; - <a href="https://htmlacademy.ru/">html academy</a></li></ul><h3 id="5ae05abb-2513-46e3-87cb-26af6ba1fc32" class="">2020:</h3><ul id="8c47dd61-ffd5-4bec-950e-f6f93ab39072" class="bulleted-list"><li style="list-style-type:disc">&quot;Professional JavaScript&quot; -<a href="https://htmlacademy.ru/"> html academy</a><ul id="2e9c3056-237c-4199-8a22-2f996c5c1088" class="bulleted-list"><li style="list-style-type:circle">Achievements<ul id="71e5bcc0-7fe5-4bdd-b061-3bee8333ac5e" class="bulleted-list"><li style="list-style-type:square">Creation of hotel-booking service that included many inputs and form validations, DOM manipulations, interaction with DOM events, interaction with server, usage of “fetch” and network requests validation, creation of modular system for a clean architecture.</li></ul></li></ul></li></ul><ul id="72c9dee4-5fad-4886-9d09-8ad3ae268079" class="bulleted-list"><li style="list-style-type:disc">Front-end bootcamp &quot;<a href="https://www.facebook.com/onebootcamp/">One bootcamp</a>&quot;<ul id="63b74bfb-e649-4b5e-ba20-0fae1316453f" class="bulleted-list"><li style="list-style-type:circle">Achievements<ul id="9c98077c-afae-4a43-b5b8-3483641ef795" class="bulleted-list"><li style="list-style-type:square">Got to know and started using “agile” and “scrum”, with story points for task complexity estimation with my team. Later we switched to time-based task complexity estimation, because it suited our team better.</li></ul><ul id="337d1f47-4741-41cd-a55a-272889bf405d" class="bulleted-list"><li style="list-style-type:square">Gave lectures about technologies and libraries. Such as Redux and React props functionality.</li></ul><ul id="88b5e078-f481-4af3-8900-a049c803c5da" class="bulleted-list"><li style="list-style-type:square">At some point of time our teacher started feeling sick and disappeared. During that time I suggested my teammates that I can teach them some things, because at that time my level of programming was higher. I tried to teach them, but without a good material structure it failed in a week, and then a new mentor came to us.</li></ul><ul id="5e895efa-295a-42c5-aef8-1ade2c8af534" class="bulleted-list"><li style="list-style-type:square">Pair programming</li></ul><ul id="4b4fbaaa-d74c-4cde-afd8-7a9570e13935" class="bulleted-list"><li style="list-style-type:square">Creation of a website for “LISP Brackets School”</li></ul><ul id="b2a7769d-2d55-4a9e-816e-390b78c2dfd7" class="bulleted-list"><li style="list-style-type:square">Creation of a car-subscription service called “ride-companion”</li></ul><ul id="727b39fb-974f-48f1-9fd5-e689e806aefd" class="bulleted-list"><li style="list-style-type:square">Creation of a service called “ITSDONE” - it’s a task manager with three display modes: displaying tasks in the form of a grid, in the form of a kanban board, in the form of a schedule. Using React, Redux, NodeJS, express, and a self-made database that consisted out of a plain json file. Interactions with server that required immediate update for all users, were made using web-sockets.</li></ul><ul id="9c248df2-6d39-46a2-bb3c-2907846f640a" class="bulleted-list"><li style="list-style-type:square">As a result of this bootcamp I got hired by a tech company</li></ul></li></ul></li></ul><p id="3dae2ec4-f223-4907-b3c4-6b47ae6ff13e" class="">
+</p><h1 id="1882ab82-14d8-4ec7-b337-abb1fff7e9d5" class="">Job 💻</h1><h3 id="e9bbfc1b-2514-4700-952c-8fb33b8dc8f2" class="">2018-2020</h3><ul id="b49fe7c9-c799-4522-ae80-b4f5341cefd3" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.linkedin.com/company/74930291">Freelancing</a>. After around 5 month of learning HTML, CSS and JavaScript I felt that I needed some real projects practice, so my brother and I found us a client on some freelance platform. It was a dental company that needed a website to sell their services. At first development of the project was going really hard, code didn&#x27;t work the way it should, some of the design elements were also hard to implement. I ran into a lot of obstacles and constantly had to google things and find new solutions. But eventually, I saw the project through, and got a happy client and a ton of experience. And since then we continued searching for new clients, and creation of our own brand together.<p id="2118c177-6fbd-4df8-bb5a-ef753d4523c5" class="">With every project that I did, my possibilities and hence responsibilities got bigger.</p></li></ul><h3 id="7f9d9f61-7ddd-43d0-b871-851395d2a297" class="">2020-2021</h3><p id="ddfc3dfc-21dc-48f4-9e49-359c988a0a12" class=""><a href="https://www.emergingtravel.com/">Emerging Travel Group (ETG)</a> - Frontend developer.
+When I came to the company, I got in not so long ago formed &quot;growth team&quot;, which goal was to make the company great again.</p><ul id="92a5631a-2a61-4f55-9c61-31600f2473ae" class="bulleted-list"><li style="list-style-type:disc"><strong>Growth team</strong><ul id="c86175ab-1468-4c53-be55-81fb3ffcd3e2" class="bulleted-list"><li style="list-style-type:circle"><em>Development of </em><a href="https://chrome.google.com/webstore/detail/ratehawk-%E2%80%94-earn-more-on-h/jndgihbbbhdhfpeipdddleinidfmkchi?hl=en"><em>browser extensions for B2B partners</em></a><em> with more than 4000 users.</em></li></ul><ul id="e51064a3-637c-4fba-b3d0-8b34924f98b2" class="bulleted-list"><li style="list-style-type:circle">Setting up CI/CD pipeline in Gitlab, that included project building, linting, and creation of .zip, and .crx archives via bash, for further import and publication to all web stores, like chrome, firefox, opera, yandex, edge.</li></ul></li></ul><ul id="275d2333-08a8-412f-a641-b23eaca0b4f6" class="bulleted-list"><li style="list-style-type:disc"><strong>Analytics team</strong><ul id="186c988f-a87b-437b-b4dd-c3c4b1380ac9" class="bulleted-list"><li style="list-style-type:circle">Development of an internal portal for analytics.</li></ul><ul id="f0cef667-105b-4005-9c92-973033a22ffc" class="bulleted-list"><li style="list-style-type:circle">Improvement and support of the internal web-based IDE called &quot;SQL Editor&quot;.</li></ul></li></ul><h3 id="7e68a993-8c92-4b23-8939-5f40a5313554" class="">2021-2022+</h3><ul id="9ddba80d-6f57-45a3-8eeb-ee8b1124e49e" class="bulleted-list"><li style="list-style-type:disc">Enty (startup)<ul id="5c4c59fb-8eab-4c0e-b198-0d0ffd9f2151" class="bulleted-list"><li style="list-style-type:circle">I developed a mobile application for iOS and android using react-native.</li></ul></li></ul><ul id="ea45ab1a-de38-4dea-84a9-439014ac1fd4" class="bulleted-list"><li style="list-style-type:disc">UnicornWitnesses -<ul id="b40fa48c-1404-4fe8-a1f7-4d8507c48ff3" class="bulleted-list"><li style="list-style-type:circle">Programming consultant</li></ul><ul id="e5b5bfed-f691-41e2-857b-21dc491b2bf6" class="bulleted-list"><li style="list-style-type:circle">Full-stack developer</li></ul><ul id="b103432c-1c9e-44a9-9dad-c37af1ea5483" class="bulleted-list"><li style="list-style-type:circle">CTO and digital products architecture creator</li></ul><p id="784ce7e4-a04b-4e65-827a-65d417a09c61" class=""><mark class="highlight-gray">in progress...</mark></p></li></ul><h1 id="b5bc4a4b-d053-416b-939e-fecf619d9ee8" class="">Certificates 🌠</h1><div id="779de0c5-9d7c-42bf-a1b0-876f92ad8ee1" class="column-list"><div id="1ac46972-b45f-4276-b537-456094a9d8f8" style="width:29.166666666666664%" class="column"><figure id="da43cf56-521e-49ae-96fd-a598af6fedb3" class="image"><img style="width:192px" src="../img/speak_like_a_pro_cert.jpg"/></figure></div><div id="f44d2152-5cdb-4a38-b318-195b4b2ff5d3" style="width:41.666666666666664%" class="column"><figure id="9a8de5ce-4157-4583-86c6-0155366d4f83" class="image"><img style="width:192px" src="../img/smanaging_teams_cert.png"/></figure></div><div id="df9547d3-2768-43f5-b28d-99edf8aa7fcd" style="width:29.166666666666675%" class="column"><figure id="3d4a7921-62e6-4041-86f0-66daa0d550c8" class="image"><img style="width:240px" src="../img/inter_to_adv_cert.jpg"/></figure><p id="6cd6c6e0-880d-4e72-9fe0-51503b4ecf5b" class="">
+</p></div></div></div></article></body></html>
