@@ -1,9 +1,10 @@
 import Section from "@components/Section";
+import { TranslationSection } from "interfaces/Translations";
 
 import s from './Footer.module.sass';
 
 interface Props {
-	content: any;
+	content: TranslationSection;
 }
 
 const Footer = ({

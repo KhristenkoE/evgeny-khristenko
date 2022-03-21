@@ -14,9 +14,10 @@ import linkedin from '@static/img/linkedin.svg';
 import github from '@static/img/github.svg';
 import crunchbase from '@static/img/twitter.svg';
 import vk from '@static/img/vk.svg';
+import { TranslationSection } from 'interfaces/Translations';
 
 interface Props {
-	content: any;
+	content: TranslationSection;
 }
 
 const Hero = ({

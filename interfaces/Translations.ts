@@ -1,5 +1,9 @@
+export interface TranslationSection {
+	[key: string]: string;
+}
+
 export type Translations = {
-	meta: any
-	hero: any
-	footer: any
+	meta: TranslationSection;
+	hero: TranslationSection;
+	footer: TranslationSection;
 }
