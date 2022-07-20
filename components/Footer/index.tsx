@@ -45,9 +45,6 @@ const Footer = ({
 						<li>
 							<a target="_blank" rel="noreferrerr" href="https://evgenykhristenko.com">Evgeny Khristenko website</a>
 						</li>
-						<li>
-							<a target="_blank" rel="noreferrerr" href="https://muteit.app">MuteIt</a>
-						</li>
 					</ul>
 				</div>
 			</Section>

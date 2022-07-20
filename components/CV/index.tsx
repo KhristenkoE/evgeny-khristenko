@@ -5,12 +5,11 @@ import styles from './CV.module.sass';
 const CV = () => {
 	return (
 		<Section className={styles.section}>
-			<a className={styles.titleLink} href="/cv.html">
+			<a className={styles.titleLink} href="https://eugenekhristenko.notion.site/eugenekhristenko/Evgeny-Khristenko-CV-91ec3bb99911406ea55983703d63a9a9">
 				<Title className={styles.title} type={Type.H2}>
 					Curriculum vitae
 				</Title>
 			</a>
-			<iframe src="/cv.html" title="CV of Evgeny Khristenko" className={styles.cv} frameBorder="0"></iframe>
 		</Section>
 	);
 };
