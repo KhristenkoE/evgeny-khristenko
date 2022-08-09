@@ -50,7 +50,7 @@ const Home = ({
 			<main className={s.main}>
 				<Hero content={content.hero} />
 				<CV />
-				<Footer content={content.footer} />
+				{/* <Footer content={content.footer} /> */}
 			</main>
 		</>
 	) : null;
